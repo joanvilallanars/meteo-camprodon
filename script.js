@@ -1,3 +1,5 @@
+// --- Configuració de les estacions ---
+
 const stations = [
     {
         name: "Camprodon",
