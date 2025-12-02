@@ -2,27 +2,45 @@
 <html lang="ca">
 <head>
     <meta charset="UTF-8">
-    <title>Meteo Vall de Camprodon</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meteo Camprodon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #e8edf3;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background: #003a70;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .card {
+            max-width: 600px;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .loading {
+            text-align: center;
+            font-size: 18px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Meteo Vall de Camprodon</h1>
 
-    <h2>Temperatures actuals</h2>
-    <table id="stationsTable">
-        <thead>
-            <tr>
-                <th>Estació</th>
-                <th>Temperatura (°C)</th>
-                <th>Humitat (%)</th>
-                <th>Vent (km/h)</th>
-            </tr>
-        </thead>
-        <tbody></tbody>
-    </table>
+<div class="header">
+    <h1>Meteo Camprodon</h1>
+</div>
 
-    <h2>Mapa</h2>
-    <div id="map"></div>
+<div class="card">
+    <h2>Dades en directe</h2>
+    <p class="loading">Carregant dades...</p>
+</div>
+
 </body>
 </html>
